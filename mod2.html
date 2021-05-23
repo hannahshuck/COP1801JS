@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 02</title>
+
+</head>
+
+<body>
+
+<p id= p1></p> </br>
+<p id = p2></p> </br>
+<p id = p3></p> </br>
+<p id = p4></p> </br>
+
+</body>
+
+<script>
+
+var num1;
+var num2;
+
+alert("This page will do math on two numbers of your choice!");
+
+num1 = parseInt(prompt("Enter the first number"), 10);
+num2 = parseInt(prompt("Enter the second number"), 10);
+
+var sum = num1 + num2;
+var prod = num1 * num2;
+var triple = (num1 + num2) *3;
+
+document.getElementById("p1").innerHTML = "Here's math!";
+document.getElementById("p2").innerHTML = num1 + " + " + num2 + " = " + sum;
+document.getElementById("p3").innerHTML = num1 + " x " + num2 + " = " + prod;
+document.getElementById("p4").innerHTML = "(" + num1 + " + " + num2 + ") x 3 = "  + triple;
+
+</script>
+
+
+</html>
