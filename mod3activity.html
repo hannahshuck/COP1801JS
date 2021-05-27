@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 03 Activity</title>
+
+</head>
+
+<body>
+
+<p id= p1></p> </br>
+
+</body>
+
+<script>
+
+var toReverse = prompt("Enter a word or phrase to reverse: ");
+
+function reverse (s)
+{
+  var revS = "";
+
+  for (var i = s.length - 1; i >= 0; i--)
+  {
+    revS += s[i];
+  }
+
+  return revS;
+}
+
+console.log(reverse(toReverse));
+document.getElementById("p1").innerHTML = reverse(toReverse);
+
+
+</script>
+
+
+</html>
