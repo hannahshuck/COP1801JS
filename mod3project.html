@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 03 Course Project</title>
+
+</head>
+
+<body>
+
+Enter your text: <input type= "text" id = "userTxt"/> </br>
+<input type = "button" onclick="getForm()"  id = "btn" value = "Submit" />
+
+<p id = "p1"></p>
+
+</body>
+
+  <script>
+
+  function getForm()
+  {
+    var str = document.getElementById("userTxt").value;
+
+    document.getElementById("p1").innerHTML = "Success! </br> You entered: " + str;
+  }
+
+  </script>
+
+</html>
