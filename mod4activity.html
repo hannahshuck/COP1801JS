@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 04 Activity</title>
+
+</head>
+
+<body>
+
+<p>Items were sorted numerically then alphabetically.</p>
+<p>Your sorted entries: </p>
+<p id= p1></p> </br>
+
+</body>
+
+<script>
+
+  var numAr = [];
+  var strAr = [];
+
+  var i = 1;
+  do
+  {
+    var ans = prompt("Enter stuff to sort: ");
+
+    if (isNaN(ans) == false)
+    {
+      numAr.push(parseInt(ans));
+    }
+    else if (isNaN(ans) == true)
+    {
+      strAr.push(ans);
+    }
+
+    i++;
+  } while (i < 4);
+
+  var display = "";
+
+  if (numAr.length > 0)
+  {
+    display += numAr.sort();
+  }
+
+  if (strAr.length > 0)
+  {
+    
+    if (numAr.length > 0)
+    {
+      display += ",";
+    }
+
+    display += strAr.sort();
+  }
+
+  document.getElementById("p1").innerHTML = display;
+
+
+</script>
+
+
+</html>
