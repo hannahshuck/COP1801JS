@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 04 Course Project</title>
+
+</head>
+
+<body>
+
+Enter your text: <input type= "text" id = "userTxt"/> </br>
+<input type = "button" onclick="getForm()"  id = "btn" value = "Submit" />
+
+<p id = "p1"></p>
+<p id = "p2"></p>
+
+</body>
+
+  <script>
+
+  function getForm()
+  {
+    var ans = document.getElementById("userTxt").value;
+    var letter;
+    var fact;
+
+    if (ans.length >= 3)
+    {
+      letter = ans.charAt(2);
+    }
+    else
+    {
+      letter = ans.charAt(0);
+    }
+
+    switch (letter)
+    {
+      case "A":
+      case "a":
+        fact = "An aardwolves diet consists almost exclusively of termites.";
+        break;
+      case "B":
+      case "b":
+        fact = "Binturongs smell like popcorn.";
+        break;
+      case "C":
+      case "c":
+        fact = "Caracals can leap into the air and catch birds as they take flight.";
+        break;
+      case "D":
+      case "d":
+        fact = "Some evidence suggests that dingoes may once have been pets, but were abandoned and left to revert to their wild state.";
+        break;
+      case "E":
+      case "e":
+        fact = "Elephants can communicate through seismic signals - sounds that create vibrations in the ground - which they may detect through their bones.";
+        break;
+      case "F":
+      case "f":
+        fact = "Foxes can make up to 40 different sounds.";
+        break;
+      case "G":
+      case "g":
+        fact = "Once a year, adult geese go through a 30-45 molting period and lose their flight and tail feathers.";
+        break;
+      case "H":
+      case "h":
+        fact = "Based on a study done by Duke University, hyenas may be smarter than chimps.";
+        break;
+      case "I":
+      case "i":
+        fact = "An adult Immortal Jellyfish is able to revert to an earlier life cycle when it becomes damage or faces environmental stress.";
+        break;
+      case "J":
+      case "j":
+        fact = "Jerboas don't drink water and instead get their hydration from the plants and insects they consume.";
+        break;
+      case "K":
+      case "k":
+        fact = "Most kangaroos are left handed.";
+        break;
+      case "L":
+      case "l":
+        fact = "Because the cells of a lobster do not degenerate, they will grow continuously and eventually will die from exhaustion during a moult.";
+        break;
+      case "M":
+      case "m":
+        fact = "Most mammals have seven neck vertebrae, but manatees only have six.";
+        break;
+      case "N":
+      case "n":
+        fact = "The narwhales tusk is actually a tooth.";
+        break;
+      case "O":
+      case "o":
+        fact = " An olinguito was exhibited in zoos around the United States in the 1970s as an olingo and was frequently moved among different zoos because she wouldn’t breed with the olingos.";
+        break;
+      case "P":
+      case "p":
+        fact = "Opossums are immune to most snake venom.";
+        break;
+      case "Q":
+      case "q":
+        fact = "Quokka moms may drop their joey from their pouch to escape a predator.";
+        break;
+      case "R":
+      case "r":
+        fact = "The English word raccoon comes from the Powhatan word aroughcun, which means 'animal that scratches with its hands.'";
+        break;
+      case "S":
+      case "s":
+        fact = "Sea lions can run up to 15 mph.";
+        break;
+      case "T":
+      case "t":
+        fact = "Tasmanian devils like to fall asleep inside a rotting carcass so they can wake up and continue eating.";
+        break;
+      case "U":
+      case "u":
+        fact = "Sea urchins have five teeth and hundreds of tiny feet.";
+        break;
+      case "V":
+      case "v":
+        fact = "Vampire bats don't suck blood but instead drink it from the small incision made by their teeth.";
+        break;
+      case "W":
+      case "w":
+        fact = "In 2009, a wolverine traveled over 500 miles from its home in Wyoming all the way to Colorado.";
+        break;
+      case "X":
+      case "x":
+        fact = "The same gene that causes hairlessness also frequently causes Xoloitzcuintlis to have an incomplete set of teeth.";
+        break;
+      case "Y":
+      case "y":
+        fact = "Yaks sweat glands are mostly non-functional.";
+        break;
+      case "Z":
+      case "z":
+        facts = "A group of zebras is called a dazzle.";
+        break;
+      default:
+        fact = "Ravens remember faces and will hold grudges against people who wrong them.";
+        break;
+    }
+
+    document.getElementById("p1").innerHTML = "Success! </br> You entered: " + ans;
+    document.getElementById("p2").innerHTML = fact;
+  }
+
+  </script>
+
+</html>
