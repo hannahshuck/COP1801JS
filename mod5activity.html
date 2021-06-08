@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Module 05 Activity</title>
+
+</head>
+
+<body>
+
+<p>Please enter the appropriate information then click submit.</p>
+First name: <input type= "text" id = "fNameF"/> </br>
+Last name: <input type= "text" id = "lNameF"/> </br>
+Address: <input type= "text" id = "addressF"/> </br>
+City: <input type= "text" id = "cityF"/> </br>
+State: <input type= "text" id = "stateF"/> </br>
+<input type = "button" onclick="getForm()"  id = "btn" value = "Submit" />
+
+<p id = "p1"></p>
+
+</body>
+
+  <script>
+
+  function getForm()
+  {
+    var fname = document.getElementById("fNameF").value;
+    var lname = document.getElementById("lNameF").value;
+    var address = document.getElementById("addressF").value;
+    var city = document.getElementById("cityF").value;
+    var state = document.getElementById("stateF").value;
+
+    console.log(fname + " "  + lname);
+    console.log(address + " " + city + " " + state);
+    
+    document.getElementById("p1").innerHTML = "Thank you!";
+  }
+
+  </script>
+
+</html>
