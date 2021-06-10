@@ -21,7 +21,7 @@ function getForm()
 
   for (var i = 0; i < info.length; i++)
   {
-    table.rows[1].cells[0].textContent = info[i];
+    table.rows[1].cells[i].textContent = info[i];
   }
 
   table.rows[0].style.backgroundColor = "#63b094";
