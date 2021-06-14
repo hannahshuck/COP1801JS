@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <style>
+    th, td
+    {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 15px;
+    }
+  </style>
+
+  <title>Module 06 Activity</title>
+
+</head>
+
+<body>
+
+  <p id = "p1">Please enter the appropriate information then click submit.</p>
+  <form id = "myForm">
+  Length: <input type= "number" id = "lF"/> </br>
+  Width: <input type= "number" id = "wF"/> </br>
+  <input type = "button" onclick="calcArea()" id = "btn" value = "Submit" />
+  </form>
+
+  <p id = "a"></p>
+
+</body>
+
+<script>
+
+  function calcArea()
+  {
+    var area = parseInt(document.getElementById("lF").value) * parseInt(document.getElementById("wF").value);
+
+    document.getElementById("a").textContent = "The area of the room is: " + area;
+  }
+
+</script>
+
+</html>
